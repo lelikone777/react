@@ -1,19 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/app/app';
 
-const text = 'Hello World';
-
-const elem = (
-    <div>
-        <h2>{text}</h2>
-        <input type="text"  />
-        <button>button</button>
-    </div>
-);
 
 ReactDOM.render(
-    elem,
+    <React.StrictMode>
+        <App/>
+    </React.StrictMode>,
   document.getElementById('root')
 );
